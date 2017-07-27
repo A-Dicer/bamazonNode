@@ -1,0 +1,17 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "shoping test node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "a-dicer",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "inquirer": "^3.2.1",
+    "mysql": "^2.13.0",
+    "table": "^4.0.1"
+  }
+}
