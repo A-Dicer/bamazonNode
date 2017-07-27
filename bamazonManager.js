@@ -160,7 +160,7 @@ function addItem(){
         "INSERT INTO products SET ?",
         {
           product_name: res.name,
-          Department_name: res.department,
+          department_name: res.department,
           price: res.price,
           stock_quantity: res.quantity
         },

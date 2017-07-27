@@ -79,9 +79,19 @@ function buy(){
 			              if (error) throw error;     
 			            }
 			        );
+
 			        var subTotal = parseFloat((results[0].price * parseInt(res.amount)).toFixed(2));
 			        var tax = (subTotal * .06).toFixed(2);
 			        var totalPrice = subTotal + parseFloat(tax);
+			        var newTotal = subTotal + results[0].product_sales;
+			        connection.query(
+			            "UPDATE products SET ? WHERE ?",
+			            [{product_sales: newTotal},{item_id: res.id}],
+			            function(error) {
+			              if (error) throw error;     
+			            }
+			        );
+
 			        console.log(
 			        	"\nRECEIPT\n---------------\n" +
 			        	"Item: " + results[0].product_name + "\n" +
