@@ -22,12 +22,6 @@ The manager .js allows you to add items and adjust the quanitity of items.  The 
 
 the first prompt allows you to add inventory to the low items on the database. The second prompt allows you to add a completely new item.
 
-### Challenge #2: Manager View (Next Level)
-
-The manager .js allows you to add items and adjust the quanitity of items.  The instructions wanted you to have an option to view items with a low inventory count.  Instead I have the whole thing pop up on load with low inventory marked in red.  
-
-the first prompt allows you to add inventory to the low items on the database. The second prompt allows you to add a completely new item.
-
 ### Challenge #3: Supervisor View (Final Level)
 
 The supervisor .js allows you to add new departments to the database and also will find out how much departments are making.  It does this by checking two different tables, joining them, grouping them, and ordering them by department name. 
